@@ -1,0 +1,32 @@
+.toggle-button {
+  border-radius: 50px;
+  padding: 10px;
+  background: linear-gradient(
+    180deg,
+    #fe71fe,
+    #db80ff,
+    #b68cff,
+    #9294ff,
+    #7199ff
+  );
+  box-shadow: inset 0 -0.5rem 0 -0.1rem rgba(157, 45, 245, 0.25);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  cursor: pointer;
+}
+
+.toggle-lines {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 20px;
+  width: 20px;
+}
+
+.line {
+  width: 20px;
+  height: 4px;
+  background-color: white;
+}

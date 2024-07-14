@@ -1,0 +1,36 @@
+.health-bar-container {
+  width: 100%;
+  border: 1px solid #000;
+  background-color: #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.health-bar {
+  height: 20px;
+  transition: width 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+.in-game-buttons-and-health {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  margin: 2rem 0;
+}
+
+.hangman-and-keyboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .in-game-buttons-and-health {
+    flex-direction: row;
+  }
+}

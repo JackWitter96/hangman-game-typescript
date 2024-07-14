@@ -1,0 +1,60 @@
+.hangman-display {
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.letters, .blank {
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+.letters {
+  color: black;
+  background-color: white;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+
+.blank {
+  background-color: lightgray;
+  opacity: 0.5;
+}
+
+.space {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  box-sizing: border-box;
+  margin: 0.4rem;
+}
+
+@media screen and (min-width: 640px) {
+  .letters, .blank {
+    font-size: 1rem;
+    padding: 20px;
+    margin: 0.2rem;
+  }
+  .space {
+    padding: 0 10px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .letters, .blank {
+    font-size: 2rem;
+    padding: 40px;
+    margin: 0.4rem;
+  }
+  .space {
+    padding: 0 20px;
+  }
+}
